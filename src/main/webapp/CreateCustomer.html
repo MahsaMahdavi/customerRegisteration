@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>تعریف مشتری حقیقی</title>
+    <style>
+        body {
+            direction: rtl;
+        }
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #2f93ff;
+            border-radius: 4px;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #5573af;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #1533a0;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+        function validate() {
+           // var valid = true;
+            //if (document.getElementById('firstName').value = '') {
+             //   valid = false;
+            //}
+            //if (valid) {
+                document.forms[0].submit();
+            //}
+        }
+    </script>
+</head>
+<body>
+<div>
+    <form action="createRealCustomer" method="post">
+        <label for="firstName">نام:</label>
+        <input type="text" name="firstName" id="firstName">
+        <label for="lastName">نام خانوادگی:</label>
+        <input type="text" name="lastName" id="lastName"><br>
+        <label for="fathername">نام پدر:</label>
+        <input type="text" name="fathername" id="fathername"><br>
+        <label for="birthday">تاریخ تولد:</label>
+        <input type="text" name="birthday" id="birthday"><br>
+        <label for="nationalCode">کد ملی:</label>
+        <input type="text" name="nationalCode" id="nationalCode"><br>
+        <input type="button" value="ثبت" onclick="validate()    ">
+    </form>
+</div>
+</body>
+</html>

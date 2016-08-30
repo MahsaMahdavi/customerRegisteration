@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>تعریف مشتری حقوقی</title>
+    <style>
+        body {
+            direction: rtl;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #21ff3d;
+            border-radius: 4px;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #30af21;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #64a007;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+        function validate() {
+            // var valid = true;
+            //if (document.getElementById('firstName').value = '') {
+            //   valid = false;
+            //}
+            //if (valid) {
+            document.forms[0].submit();
+            //}
+        }
+    </script>
+</head>
+<body>
+<form action="createLegalCustomer" method="post">
+    <label for="companyName">نام شرکت:</label>
+    <input type="text" name="companyName" id="companyName"><br>
+    <label for="registerationDate">تاریخ ثبت:</label>
+    <input type="text" name="registerationDate" id="registerationDate"><br>
+    <label for="barCode">کد اقتصادی</label>
+    <input type="text" name="barCode" id="barCode"><br>
+    <input type="button" value="ثبت " onclick="validate()">
+</form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>Real</servlet-name>
+        <servlet-class>presentation.CreateRealCustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Legal</servlet-name>
+        <servlet-class>presentation.CreateLegalCustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>searchCustomer</servlet-name>
+        <servlet-class>presentation.SearchRealCustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>searchLegalCustomer</servlet-name>
+        <servlet-class>presentation.SearchLegalCustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>editRealCustomer</servlet-name>
+        <servlet-class>presentation.UpdateRealCustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>deleteRealCustomer</servlet-name>
+        <servlet-class>presentation.DeleteRealCustomerServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>Real</servlet-name>
+        <url-pattern>/createRealCustomer</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Legal</servlet-name>
+        <url-pattern>/createLegalCustomer</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>searchCustomer</servlet-name>
+        <url-pattern>/searchRealCustomer</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>searchLegalCustomer</servlet-name>
+        <url-pattern>/searchLegalCustomer</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>editRealCustomer</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>deleteRealCustomer</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+</web-app>

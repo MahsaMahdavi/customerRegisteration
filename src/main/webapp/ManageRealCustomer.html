@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>مشتری حقیقی</title>
+    <style>
+        body{
+            direction: rtl;
+        }
+    </style>
+</head>
+<body>
+<body>
+<h3>عملیات مورد نظر خود را انتخاب کنید:</h3>
+<div>
+    <form>
+        <input type="radio" name="state" id="create" value="create" checked>  تعریف مشتری جدید<br>
+        <input type="radio" name="state" id="search" value="search"> جستجوی مشتری<br><br>
+        <input type="button" value="تایید" onclick="redirect();">
+    </form>
+</div>
+</body>
+</body>
+</html>
+<script type="text/javascript">
+
+    function redirect() {
+
+        if (document.getElementById("create").checked) {
+            window.location = "CreateCustomer.html";
+        }
+        if (document.getElementById("search").checked) {
+            window.location = "searchCustomer.html";
+        }
+    }
+</script>

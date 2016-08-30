@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ورود</title>
+    <style>
+        body {
+            direction: rtl;
+        }
+    </style>
+</head>
+<body>
+<h3>نوع مشتری مورد نظر را انتخاب نمایید:</h3>
+<div>
+    <form>
+        <input type="radio" name="customer" id="legal" value="legal" checked> مشتری حقوقی<br>
+        <input type="radio" name="customer" id="real" value="real">مشتری حقیقی<br><br>
+        <input type="button" value="تایید" onclick="redirect();">
+    </form>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+
+    function redirect() {
+        if (document.getElementById("legal").checked) {
+            window.location = "ManageLegalCustomer.html";
+        }
+        if (document.getElementById("real").checked) {
+            window.location = "ManageRealCustomer.html";
+        }
+    }
+</script>
